@@ -1,4 +1,4 @@
-<img width="483" height="247" alt="image" src="https://github.com/user-attachments/assets/de0925b4-8c2a-4e98-9aaa-6e2cab7b3139" /># 🏗️ SQL Data Warehouse – Sales Analytics
+# 🏗️ SQL Data Warehouse – Sales Analytics
 
 A production-grade data warehouse built with SQL Server, implementing a **Bronze → Silver → Gold** pipeline architecture for end-to-end sales analytics.
 
