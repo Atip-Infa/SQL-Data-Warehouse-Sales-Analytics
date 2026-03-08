@@ -21,6 +21,19 @@ The warehouse follows a three-layer medallion architecture:
 
 ---
 
+---
+
+## 📊 Dashboard Preview
+
+- The Power BI dashboard connects to the **Gold layer views** of the data warehouse,
+which provide business-ready data modeled using a star schema.
+- It visualizes key sales insights such as revenue trends, top customers,
+and product performance.
+
+![Sales Dashboard](docs/dashboard/sales_dashboard_preview.png)
+
+---
+
 ## 📂 Project Structure
 
 ```
@@ -136,10 +149,10 @@ Pre-built queries covering four analytical domains:
 - Seasonal sales patterns
 - Year-over-year comparisons
 
-**Function** (`functions.sql`)
+**Advanced Analytics** (`functions.sql`)
 - Advanced analytical queries using SQL window functions
 - Includes ranking, running totals, revenue share analysis
-- top-customer analysis across different dimensions
+- Top-customer analysis across different dimensions
   
 ---
 
@@ -189,7 +202,7 @@ Tests are located in the `tests/` directory:
 
 - **SQL Server** – Database engine for the data warehouse
 - **SQL Server Management Studio (SSMS 22)** – SQL development environment
-- **T-SQL** – Data transformation and analytical queries
+- **T-SQL** – Data transformation, data modeling, and analytical queries
 - **Power BI** – Dashboard and reporting
 - **draw.io** – Data warehouse architecture and modeling diagrams
 - **Medallion Architecture** – Bronze / Silver / Gold data pipeline design
