@@ -16,12 +16,6 @@ The warehouse follows a three-layer medallion architecture:
 
 ![Data Warehouse Architecture](docs/data_warehouse.png)
 
-| Layer | Purpose | Transformation |
-|---|---|---|
-| **Bronze** | Raw ingestion | None |
-| **Silver** | Data cleaning | Type casting, deduplication, quality checks |
-| **Gold** | Analytics | Star schema, aggregations, business logic |
-
 ---
 
 ## 📂 Project Structure
