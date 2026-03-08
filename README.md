@@ -23,10 +23,7 @@ The warehouse follows a three-layer medallion architecture:
 
 ## 📊 Dashboard Preview
 
-- The Power BI dashboard connects to the **Gold layer views** of the data warehouse,
-which provide business-ready data modeled using a star schema.
-- It visualizes key sales insights such as revenue trends, top customers,
-and product performance.
+The Power BI dashboard connects to the **Gold layer views** of the data warehouse, which provide business-ready data modeled using a **star schema**.
 
 ![Sales Dashboard](docs/dashboard/sales_dashboard_preview.png)
 
