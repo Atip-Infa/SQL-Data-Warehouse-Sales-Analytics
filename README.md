@@ -26,14 +26,14 @@ sql_warehouse_learning/
 │
 ├── datasets/                         # Raw source datasets used for the data warehouse
 │   ├── source_crm/                   # CRM (Customer Relationship Management) source data
-│   │   ├── cust_info.csv             # Customer master information from CRM
-│   │   ├── prd_info.csv              # Product information from CRM
-│   │   └── sales_details.csv         # Sales transaction records
+│   │   ├── cust_info.csv            
+│   │   ├── prd_info.csv              
+│   │   └── sales_details.csv        
 │   │
 │   └── source_erp/                   # ERP (Enterprise Resource Planning) source data
-│       ├── CUST_AZ12.csv             # ERP customer master dataset
-│       ├── LOC_A101.csv              # ERP location or branch data
-│       └── PX_CAT_G1V2.csv           # Product category mapping data
+│       ├── CUST_AZ12.csv            
+│       ├── LOC_A101.csv             
+│       └── PX_CAT_G1V2.csv          
 │
 ├── scripts/                          # SQL scripts used to build and run the data warehouse pipeline
 │   ├── init.database.sql             # Initialize the database and create base schemas
@@ -51,22 +51,22 @@ sql_warehouse_learning/
 │       └── reporting_views.sql       # Additional reporting views for business analysis
 │
 ├── queries/                          # Analytical SQL queries used to answer business questions
-│   ├── basic_sales_metrics.sql       # Calculate core sales KPIs (total revenue, order counts)
-│   ├── customer_analysis.sql         # Analyze customer revenue and behavior
-│   ├── product_analysis.sql          # Identify best-selling products and product performance
-│   ├── time_analysis.sql             # Analyze revenue trends over time
-│   └── functions.sql                 # Custom SQL functions used in analytical queries
+│   ├── basic_sales_metrics.sql     
+│   ├── customer_analysis.sql      
+│   ├── product_analysis.sql         
+│   ├── time_analysis.sql           
+│   └── functions.sql                
 │
 ├── tests/                            # Data quality and validation tests
 │   ├── check_silver.sql              # Validate cleaned data in the Silver layer
 │   ├── check_gold.sql                # Validate analytics-ready data in the Gold layer
-│   └── placeholder                   # Placeholder file to keep the tests folder tracked in Git
+│                
 │
 └── docs/                             # Project documentation, diagrams, and dashboard files
     │
     ├── dashboard/                    # Power BI dashboard files and preview images
-    │   ├── sales_dashboard.pbix      # Power BI dashboard built from the Gold analytics layer
-    │   └── sales_dashboard_preview.png # Screenshot preview of the Power BI dashboard
+    │   ├── sales_dashboard.pbix    
+    │   └── sales_dashboard_preview.png 
     │
     ├── data_warehouse.png            # High-level architecture of the data warehouse system
     ├── dataflow.png                  # Detailed ETL data flow from source systems to warehouse layers
