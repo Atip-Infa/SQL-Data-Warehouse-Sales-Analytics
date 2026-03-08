@@ -67,7 +67,7 @@ sql_warehouse_learning/
 │
 ├── tests/                            # Data quality and validation tests
 │   ├── check_silver.sql              # Validate cleaned data in the Silver layer
-│   ├── check_gold.sql                # Validate analytics-ready data in the Gold layer
+│   └── check_gold.sql                # Validate analytics-ready data in the Gold layer
 │                
 │
 └── docs/                             # Project documentation, diagrams, and dashboard files
