@@ -208,10 +208,10 @@ Tests are located in the `tests/` directory:
 ## 💡 Key Skills Demonstrated
 
 | Area | Detail |
-|---|---|
-| Data Warehouse Design | Medallion architecture, layer separation |
-| ETL Development | Stored procedures, incremental loading |
-| Data Modeling | Star schema with fact and dimension tables |
-| SQL Transformation | Cleaning, deduplication, type standardization |
-| Analytical Querying | Metrics, segmentation, trend analysis |
-| Data Quality | Automated test scripts per layer |
+|-----|------|
+| Data Warehouse Design | Medallion architecture, Bronze / Silver / Gold layer separation |
+| ETL Development | Data ingestion and transformation using SQL scripts |
+| Data Modeling | Star schema with fact and dimension views |
+| SQL Transformation | Data cleaning, deduplication, and standardization |
+| Analytical Querying | Metrics calculation, ranking, and trend analysis |
+| Data Quality | Validation queries for Silver and Gold layers |
