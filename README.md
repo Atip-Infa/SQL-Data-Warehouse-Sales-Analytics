@@ -21,8 +21,6 @@ The warehouse follows a three-layer medallion architecture:
 
 ---
 
----
-
 ## 📊 Dashboard Preview
 
 - The Power BI dashboard connects to the **Gold layer views** of the data warehouse,
