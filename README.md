@@ -185,11 +185,13 @@ Tests are located in the `tests/` directory:
 
 ## 🛠️ Technologies Used
 
-- **SQL Server** – Database engine
-- **T-SQL** – Stored procedures and transformations
-- **Power BI** – Dashboard and reporting layer
-- **Star Schema** – Gold layer data modeling
-- **Medallion Architecture** – Bronze / Silver / Gold pipeline
+- **SQL Server** – Database engine for the data warehouse
+- **SQL Server Management Studio (SSMS 22)** – SQL development environment
+- **T-SQL** – Data transformation and analytical queries
+- **Power BI** – Dashboard and reporting
+- **draw.io** – Data warehouse architecture and modeling diagrams
+- **Medallion Architecture** – Bronze / Silver / Gold data pipeline design
+- **Star Schema** – Dimensional modeling for the analytics layer
 
 ---
 
