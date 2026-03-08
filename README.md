@@ -30,4 +30,5 @@ The data warehouse is built using a Medallion Layers:
 - Star schema for reporting
 #### Pipeline flow:
 Source Systems → Bronze → Silver → Gold → Power BI Dashboard
+
 ![Data Warehouse Architecture](docs/data_warehouse.png)
