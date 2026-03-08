@@ -1,4 +1,4 @@
-# Data Warehouse Project
+## Data Warehouse Project
 This project demonstrates the design and implementation of a modern SQL-based Data Warehouse for sales analytics.
 
 The system integrates data from multiple sources (CRM and ERP), processes it through a multi-layer data architecture, and provides analytical datasets for business reporting.
@@ -6,4 +6,10 @@ The system integrates data from multiple sources (CRM and ERP), processes it thr
 The project follows the Bronze → Silver → Gold data pipeline architecture, commonly used in modern data platforms.
 
 
-# Architecture
+## Architecture
+The data warehouse is built using a three-layer architecture:
+#Bronze Layer (Raw Data)
+
+Stores raw data from source systems.
+
+Data is loaded without transformation.
