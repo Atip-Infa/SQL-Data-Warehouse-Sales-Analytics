@@ -46,9 +46,9 @@ sql_warehouse_learning/
 │   │   ├── ddl_silver.sql            # Create structured tables for cleaned data
 │   │   └── proc_load_silver.sql      # Transform Bronze data into cleaned Silver tables
 │   │
-│   └── gold/                         # Gold layer: analytics-ready data model
-│       ├── ddl_gold.sql              # Create star schema (fact and dimension tables)
-│       └── reporting_views.sql       # Create reporting views for analytics and BI tools
+│   └── gold/                         # Gold layer: analytics-ready business layer
+│       ├── ddl_gold.sql              # Create dimension and fact views for the star schema
+│       └── reporting_views.sql       # Additional reporting views for business analysis
 │
 ├── queries/                          # Analytical SQL queries used to answer business questions
 │   ├── basic_sales_metrics.sql       # Calculate core sales KPIs (total revenue, order counts)
