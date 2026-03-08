@@ -146,17 +146,26 @@ Pre-built queries covering four analytical domains:
 Follow these steps in order:
 
 ```bash
-# 1. Initialize the database
+# 1. Initialize the database and create base schemas
 scripts/init.database.sql
 
-# 2. Load raw data into Bronze layer
+# 2. Create Bronze layer tables for raw source data
+scripts/bronze/ddl_bronze.sql
+
+# 3. Load raw data into Bronze layer
 scripts/bronze/proc_load_bronze.sql
 
-# 3. Clean and transform into Silver layer
+# 4. Create structured tables for the Silver layer
+scripts/silver/ddl_silver.sql
+
+# 5. Clean and transform data into the Silver layer
 scripts/silver/proc_load_silver.sql
 
-# 4. Build the Gold analytics layer
+# 6. Build the Gold analytics layer (fact and dimension views)
 scripts/gold/ddl_gold.sql
+
+# 7. Create reporting and business analysis views
+scripts/gold/reporting_views.sql
 ```
 
 After setup, run queries from the `queries/` directory or connect Power BI to the Gold layer views.
