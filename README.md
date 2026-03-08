@@ -1,4 +1,4 @@
-## Sales Data Warehouse & Analytics Project
+# Sales Data Warehouse & Analytics Project
 This project demonstrates the design and implementation of a SQL-based Data Warehouse for sales analytics.
 
 Data from multiple systems (CRM and ERP) is ingested, cleaned, and transformed using a Bronze → Silver → Gold data architecture.
@@ -16,3 +16,17 @@ The objectives of this project are:
 - Design a Star Schema for analytics
 - Perform business analysis using SQL
 - Create a Power BI dashboard for insights
+
+
+## Data Architecture
+The data warehouse is built using a Medallion Layers:
+### Bronze Layer
+- Raw data ingestion from source systems
+### Silver Layer
+- Data cleaning and transformation
+- Standardization and validation
+### Gold Layer
+- Analytical data model
+- Star schema for reporting
+Pipeline flow:
+Source Systems → Bronze → Silver → Gold → Power BI Dashboard
