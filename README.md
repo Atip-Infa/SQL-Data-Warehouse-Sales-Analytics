@@ -99,22 +99,14 @@ sql_warehouse_learning/
 
 The Gold layer is modeled as a **Star Schema** for optimized analytical querying:
 
-```
-                    ┌──────────────┐
-                    │  dim_date    │
-                    └──────┬───────┘
-                           │
-┌──────────────┐    ┌──────┴───────┐    ┌──────────────┐
-│ dim_customers│────│  fact_sales  │────│ dim_products │
-└──────────────┘    └─────────────┘    └──────────────┘
-```
+
+![Data Warehouse Architecture](docs/star_schema.png)
 
 | Table | Type | Description |
 |---|---|---|
 | `fact_sales` | Fact | Core sales transactions |
 | `dim_customers` | Dimension | Customer attributes |
 | `dim_products` | Dimension | Product attributes |
-| `dim_date` | Dimension | Date/time hierarchy |
 
 ---
 
