@@ -10,10 +10,9 @@ The goal of this project is to simulate a real-world data pipeline, including da
 ## Objectives
 
 The objectives of this project are:
-
-Integrate data from multiple source systems
-Build a structured data warehouse architecture
-Transform raw data into clean analytical datasets
-Design a Star Schema for analytics
-Perform business analysis using SQL
-Create a Power BI dashboard for insights
+- Integrate data from multiple source systems
+- Build a structured data warehouse architecture
+- Transform raw data into clean analytical datasets
+- Design a Star Schema for analytics
+- Perform business analysis using SQL
+- Create a Power BI dashboard for insights
