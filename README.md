@@ -7,10 +7,18 @@ The final analytical dataset is used to perform business analysis with SQL and v
 The goal of this project is to simulate a real-world data pipeline, including data ingestion, transformation, data modeling, and reporting.
 
 
-## Architecture
-The data warehouse is built using a three-layer architecture:
-#Bronze Layer (Raw Data)
+## Objectives
 
-Stores raw data from source systems.
+The objectives of this project are:
 
-Data is loaded without transformation.
+Integrate data from multiple source systems
+
+Build a structured data warehouse architecture
+
+Transform raw data into clean analytical datasets
+
+Design a Star Schema for analytics
+
+Perform business analysis using SQL
+
+Create a Power BI dashboard for insights
