@@ -28,5 +28,5 @@ The data warehouse is built using a Medallion Layers:
 ### Gold Layer
 - Analytical data model
 - Star schema for reporting
-Pipeline flow:
+#### Pipeline flow:
 Source Systems → Bronze → Silver → Gold → Power BI Dashboard
