@@ -1,6 +1,8 @@
 # 🏗️ SQL Data Warehouse – Sales Analytics
 
-A production-grade data warehouse built with SQL Server, implementing a **Bronze → Silver → Gold** pipeline architecture for end-to-end sales analytics.
+A modern SQL-based data warehouse built with SQL Server,
+implementing a Bronze → Silver → Gold pipeline architecture
+for end-to-end sales analytics.
 
 ---
 
