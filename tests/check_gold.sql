@@ -1,7 +1,9 @@
 -- ============================================================
 --- CHECK gold.dim_customers
 -- ============================================================
-/* CHECK FOR UNIQUENESS OF CUSTOMER KEY IN gold.dim_customers*/
+SELECT *
+FROM gold.dim_customers
+
 SELECT 
  customer_key,
  COUNT(*) AS duplicate_count
@@ -12,7 +14,9 @@ HAVING COUNT(*) > 1;
 -- ============================================================
 -- Checking gold.product_key
 -- ============================================================
-/* CHECK FOR UNIQUENESS OF PRODUCT KEY IN gold.dim_products */
+SELECT *
+FROM gold.dim_products
+
 SELECT 
  product_key,
  COUNT(*) AS duplicate_count
@@ -24,7 +28,9 @@ HAVING COUNT(*) > 1;
 -- ============================================================
 -- CHECK gold.fact_sales
 -- ============================================================
-/* CHECK DATA MODEL CONNECTIVITY BETWEEN FACT AND DIMENSIONS */
+SELECT * 
+FROM gold.fact_sales
+
 SELECT * 
 FROM gold.fact_sales f
 LEFT JOIN gold.dim_customers c
@@ -32,3 +38,33 @@ ON c.customer_key = f.customer_key
 LEFT JOIN gold.dim_products p
 ON p.product_key = f.product_key
 WHERE p.product_key IS NULL OR c.customer_key IS NULL  
+
+
+-- ============================================================
+-- CHECK gold.sales_by_month
+-- ============================================================
+SELECT *
+FROM gold.sales_by_month
+
+SELECT TOP 10 *
+FROM gold.sales_by_month
+
+
+-- ============================================================
+-- CHECK gold.top_products
+-- ============================================================
+SELECT *
+FROM gold.top_products
+
+SELECT TOP 10 *
+FROM gold.top_products
+
+
+-- ============================================================
+-- CHECK gold.sales_by_country
+-- ============================================================
+SELECT *
+FROM gold.sales_by_country
+
+SELECT TOP 10 *
+FROM gold.sales_by_country
