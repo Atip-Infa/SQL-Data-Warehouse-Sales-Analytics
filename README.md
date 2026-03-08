@@ -24,46 +24,55 @@ The warehouse follows a three-layer medallion architecture:
 ```
 sql_warehouse_learning/
 │
-├── datasets/
-│   ├── source_crm/               # CRM source files
-│   │   ├── cust_info.csv
-│   │   ├── prd_info.csv
-│   │   └── sales_details.csv
+├── datasets/                         # Raw source datasets used for the data warehouse
+│   ├── source_crm/                   # CRM (Customer Relationship Management) source data
+│   │   ├── cust_info.csv             # Customer master information from CRM
+│   │   ├── prd_info.csv              # Product information from CRM
+│   │   └── sales_details.csv         # Sales transaction records
 │   │
-│   └── source_erp/               # ERP source files
-│       ├── CUST_AZ12.csv
-│       ├── LOC_A101.csv
-│       └── PX_CAT_G1V2.csv
+│   └── source_erp/                   # ERP (Enterprise Resource Planning) source data
+│       ├── CUST_AZ12.csv             # ERP customer master dataset
+│       ├── LOC_A101.csv              # ERP location or branch data
+│       └── PX_CAT_G1V2.csv           # Product category mapping data
 │
-├── scripts/
-│   ├── init.database.sql         # Database initialization
+├── scripts/                          # SQL scripts used to build and run the data warehouse pipeline
+│   ├── init.database.sql             # Initialize the database and create base schemas
 │   │
-│   ├── bronze/
-│   │   ├── ddl_bronze.sql        # Table definitions
-│   │   └── proc_load_bronze.sql  # Load procedure
+│   ├── bronze/                       # Bronze layer: raw data ingestion layer
+│   │   ├── ddl_bronze.sql            # Create Bronze tables to store raw source data
+│   │   └── proc_load_bronze.sql      # Load CSV files into Bronze tables
 │   │
-│   ├── silver/
-│   │   ├── ddl_silver.sql        # Table definitions
-│   │   └── proc_load_silver.sql  # Transform & load procedure
+│   ├── silver/                       # Silver layer: cleaned and standardized data
+│   │   ├── ddl_silver.sql            # Create structured tables for cleaned data
+│   │   └── proc_load_silver.sql      # Transform Bronze data into cleaned Silver tables
 │   │
-│   └── gold/
-│       ├── ddl_gold.sql          # Star schema definitions
-│       └── reporting_views.sql   # Pre-built analytical views
+│   └── gold/                         # Gold layer: analytics-ready data model
+│       ├── ddl_gold.sql              # Create star schema (fact and dimension tables)
+│       └── reporting_views.sql       # Create reporting views for analytics and BI tools
 │
-├── queries/
-│   ├── basic_sales_metrics.sql
-│   ├── customer_analysis.sql
-│   ├── product_analysis.sql
-│   └── time_analysis.sql
+├── queries/                          # Analytical SQL queries used to answer business questions
+│   ├── basic_sales_metrics.sql       # Calculate core sales KPIs (total revenue, order counts)
+│   ├── customer_analysis.sql         # Analyze customer revenue and behavior
+│   ├── product_analysis.sql          # Identify best-selling products and product performance
+│   ├── time_analysis.sql             # Analyze revenue trends over time
+│   └── functions.sql                 # Custom SQL functions used in analytical queries
 │
-├── tests/
-│   ├── check_silver.sql          # Silver layer data quality tests
-│   └── check_gold.sql            # Gold layer validation tests
+├── tests/                            # Data quality and validation tests
+│   ├── check_silver.sql              # Validate cleaned data in the Silver layer
+│   ├── check_gold.sql                # Validate analytics-ready data in the Gold layer
+│   └── placeholder                   # Placeholder file to keep the tests folder tracked in Git
 │
-└── docs/
-    ├── dataflow.png
-    ├── star_schema.png
-    └── business_questions.md
+└── docs/                             # Project documentation, diagrams, and dashboard files
+    │
+    ├── dashboard/                    # Power BI dashboard files and preview images
+    │   ├── sales_dashboard.pbix      # Power BI dashboard built from the Gold analytics layer
+    │   └── sales_dashboard_preview.png # Screenshot preview of the Power BI dashboard
+    │
+    ├── data_warehouse.png            # High-level architecture of the data warehouse system
+    ├── dataflow.png                  # Detailed ETL data flow from source systems to warehouse layers
+    ├── integration_model.png         # Diagram showing integration of CRM and ERP datasets
+    ├── star_schema.png               # Star schema design used in the Gold layer
+    └── business_questions.md         # Business questions answered using SQL analysis
 ```
 
 ---
