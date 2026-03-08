@@ -31,3 +31,7 @@ The data warehouse is built using a Medallion Layers:
 #### Pipeline flow:
 
 ![Data Warehouse Architecture](docs/data_warehouse.png)
+
+## Data Sources
+CRM Data
+datasets/source_crm
