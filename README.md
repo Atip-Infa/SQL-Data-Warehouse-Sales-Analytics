@@ -152,13 +152,13 @@ scripts/init.database.sql
 # 2. Create Bronze layer tables for raw source data
 scripts/bronze/ddl_bronze.sql
 
-# 3. Load raw data into Bronze layer
+# 3. Load raw data into Bronze layer (after execute the file. execute 'EXEC bronze.load_bronze' next)
 scripts/bronze/proc_load_bronze.sql
 
 # 4. Create structured tables for the Silver layer
 scripts/silver/ddl_silver.sql
 
-# 5. Clean and transform data into the Silver layer
+# 5. Clean and transform data into the Silver layer (after execute the file. execute 'EXEC silver.load_silver' next)
 scripts/silver/proc_load_silver.sql
 
 # 6. Build the Gold analytics layer (fact and dimension views)
