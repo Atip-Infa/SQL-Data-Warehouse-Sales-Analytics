@@ -10,7 +10,7 @@ FROM gold.fact_sales f
 JOIN gold.dim_products p
 ON f.product_key = p.product_key
 GROUP BY p.product_name
-ORDER BY revenue DESC;
+ORDER BY revenue DESC
 
 --- TOTAL QUANTITY SOLD PER PRODUCT
 SELECT
@@ -20,7 +20,7 @@ FROM gold.fact_sales f
 JOIN gold.dim_products p
 ON f.product_key = p.product_key
 GROUP BY p.product_name
-ORDER BY units_sold DESC;
+ORDER BY units_sold DESC
 
 --- REVENUE BY CATEGORY
 SELECT
@@ -30,7 +30,7 @@ FROM gold.fact_sales f
 JOIN gold.dim_products p
 ON f.product_key = p.product_key
 GROUP BY p.category
-ORDER BY revenue DESC;
+ORDER BY revenue DESC
 
 --- REVENUE BY SUBCATEGORY
 SELECT
@@ -40,7 +40,7 @@ FROM gold.fact_sales f
 JOIN gold.dim_products p
 ON f.product_key = p.product_key
 GROUP BY p.sub_category
-ORDER BY revenue DESC;
+ORDER BY revenue DESC
 
 --- TOP 10 PRODUCTS BY REVENUE
 SELECT TOP 10
@@ -50,4 +50,4 @@ FROM gold.fact_sales f
 JOIN gold.dim_products p
 ON f.product_key = p.product_key
 GROUP BY p.product_name
-ORDER BY revenue DESC;
+ORDER BY revenue DESC
