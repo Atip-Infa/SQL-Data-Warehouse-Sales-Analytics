@@ -14,27 +14,7 @@ This project demonstrates the design and implementation of a modern SQL-based Da
 
 The warehouse follows a three-layer medallion architecture:
 
-```
-Source Systems (CRM + ERP)
-        │
-        ▼
-┌─────────────────┐
-│  🥉 Bronze Layer │  Raw data – loaded as-is, no transformation
-└────────┬────────┘
-         │
-         ▼
-┌─────────────────┐
-│  🥈 Silver Layer │  Cleaned, standardized, type-corrected data
-└────────┬────────┘
-         │
-         ▼
-┌─────────────────┐
-│  🥇 Gold Layer   │  Star schema – optimized for analytics & reporting
-└─────────────────┘
-        │
-        ▼
-  📊 Analytics / Power BI
-```
+![Data Warehouse Architecture](docs/data_warehouse.png)
 
 | Layer | Purpose | Transformation |
 |---|---|---|
