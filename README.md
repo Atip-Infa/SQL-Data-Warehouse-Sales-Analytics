@@ -14,6 +14,7 @@ This project demonstrates the design and implementation of a modern SQL-based Da
 
 The warehouse follows a three-layer medallion architecture:
 
+
 ![Data Warehouse Architecture](docs/data_warehouse.png)
 
 ---
