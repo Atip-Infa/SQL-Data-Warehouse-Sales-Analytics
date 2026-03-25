@@ -203,16 +203,6 @@ Tests are located in the `tests/` directory:
 
 ---
 
-## 🔮 Future Improvements
-
-- [ ] Automated ETL scheduling (SQL Server Agent / Azure Data Factory)
-- [ ] Expanded analytical datasets (returns, inventory, forecasting)
-- [ ] Embedded Power BI dashboards
-- [ ] Data quality monitoring and alerting
-- [ ] Incremental load support for large datasets
-
----
-
 ## 💡 Key Skills Demonstrated
 
 | Area | Detail |
