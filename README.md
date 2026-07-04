@@ -74,7 +74,7 @@ sql_warehouse_learning/
     │
     ├── dashboard/                    # Power BI dashboard files and preview images
     │   ├── sales_dashboard.pbix    
-    │   └── sales_dashboard_preview.png 
+    │   └── sales_dashboard.png 
     │
     ├── data_warehouse.png            # High-level architecture of the data warehouse system
     ├── dataflow.png                  # Detailed ETL data flow from source systems to warehouse layers
