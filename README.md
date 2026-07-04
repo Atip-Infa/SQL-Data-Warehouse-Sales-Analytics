@@ -23,7 +23,7 @@ The warehouse follows a three-layer medallion architecture:
 
 The Power BI dashboard connects to the **Gold layer views** of the data warehouse, which provide business-ready data modeled using a **star schema**.
 
-![Sales Dashboard](docs/dashboard/sales_dashboard_preview.png)
+![Sales Dashboard](docs/dashboard/sales_dashboard.png)
 
 ---
 
